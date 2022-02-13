@@ -14,4 +14,12 @@ func main() {
 	default:
 		fmt.Println("Option por defecto")
 	}
+	x := 8
+	switch y := x % 2; y {
+	case 0:
+		x -= 1
+	case 1:
+		x += 1
+	}
+	fmt.Println(x)
 }
